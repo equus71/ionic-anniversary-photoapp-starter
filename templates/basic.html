@@ -1,0 +1,15 @@
+<ion-view view-title="{{ gallery.title }}">
+  <ion-content class="full">
+     <ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true" auto-play="false"
+                       show-pager="false" class="sliderBox">            
+           <ion-slide ng-repeat="img in gallery.images">
+                <div class="bg-img" style="background-image:url({{img.url}})">
+                    {{ img.url }}
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="desc-box">
+            <h4 class="text-center text-appear-animation" ng-repeat="t in text"> {{ t }}</h4>
+        </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,29 @@
+{
+  "music": {
+    "enabled": true,
+    "path": "/android_asset/www/img/itisyou.mp3"
+  },
+  "galleries": [
+    {
+      "name": "rome",
+      "url": "/rome",
+      "title": "Rzym 2014",
+      "template": "templates/basic.html",
+      "avatar": "img/r/1.jpg",
+      "images": [
+        {
+          "url": "img/r/1.jpg",
+          "text": "test"
+        },
+        {
+          "url": "img/r/2.jpg",
+          "text": "test2"
+        },
+        {
+          "url": "img/r/3.jpg",
+          "text": "test3"
+        }
+      ]
+    }
+  ]
+}
