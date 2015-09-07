@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 
+    var $urlRouterProviderRef, $stateProviderRef;
+
     angular.module('anniversary-photo-app',
         ['ionic', 'anniversary-photo-app.services', 'anniversary-photo-app.controllers'])
 
@@ -9,7 +11,6 @@
 
             //$locationProvider.html5Mode(false);
             $stateProviderRef = $stateProvider;
-
         })
 
         .run(['appDataService',
