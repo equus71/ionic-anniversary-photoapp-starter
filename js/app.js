@@ -55,7 +55,7 @@
                     url: "/app",
                     abstract: true,
                     templateUrl: "templates/menu.html",
-                    controller: 'AppCtrl'
+                    controller: 'AppCtrl as vm'
                 })
                 .state('app.start', {
                     url: "/start",
