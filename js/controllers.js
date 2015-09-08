@@ -3,7 +3,8 @@
   angular.module('anniversary-photo-app.controllers', ['anniversary-photo-app.services'])
 
   .controller('AppCtrl', AppCtrl)
-    .controller('BasicGalleryCtrl', BasicGalleryCtrl);
+    .controller('BasicGalleryCtrl', BasicGalleryCtrl)
+    .controller('StartPageCtrl', StartPageCtrl);
 
   AppCtrl.$inject = ['$rootScope', 'appDataService'];
 
@@ -44,7 +45,14 @@
     $scope.slideHasChanged = function(param) {
       $scope.text = [$scope.gallery.images[param].text];
     };
+  }
 
+  StartPageCtrl.$inject = ["$scope", "appDataService"];
+
+  function StartPageCtrl($scope, appDataService) {
+    appDataService.getAppData().then(function(data) {
+      $scope.startPage = data.startPage;
+    });
   }
 
 

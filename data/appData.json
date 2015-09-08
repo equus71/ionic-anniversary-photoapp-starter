@@ -1,6 +1,14 @@
 {
+  "startPage":{
+    "title": "Our anniversary",
+    "image": "img/front.jpg",
+    "text": "dla Żony:*",
+    "template": "templates/startPageGlass.html",
+    "controller": "StartPageCtrl"
+  },
   "music": {
     "enabled": true,
+    "text": "our song",
     "path": "/android_asset/www/img/itisyou.mp3"
   },
   "galleries": [
