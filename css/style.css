@@ -1,0 +1,75 @@
+/* images */
+
+.bg-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-img.underlay {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* slider */
+.sliderBox {
+    height: 100%;
+}
+
+.slider {
+    height: 100%;
+}
+
+.full .scroll {
+    height: 100%;
+}
+
+.slider-slide {
+    background: #000000
+    /*#11c1f3;*/
+}
+
+/* text on images */
+.desc-box {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.42);
+    padding: 0 10%;
+    pointer-events: none
+}
+
+.desc-box h4 {
+    color: #ffffff;
+}
+
+/* text animation */
+.text-appear-animation {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.text-appear-animation.ng-enter {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.text-appear-animation.ng-enter.ng-enter-active {
+    /*opacity: 1;*/
+}
+
+.text-appear-animation.ng-leave {
+    display: none;
+}
