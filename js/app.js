@@ -47,7 +47,7 @@
               abstract: false,
               views: {
                 content: {
-                   controller: data.startPage.controller || "StartPageCtrl",
+                  controller: data.startPage.controller || "StartPageCtrl",
                   templateUrl: data.startPage.template || "templates/start.html"
                 }
               }
@@ -65,7 +65,14 @@
           url: "/app",
           abstract: true,
           templateUrl: "templates/menu.html",
-          controller: 'AppCtrl as vm'
+          controller: 'AppCtrl as vm',
+          resolve: {
+            appData: ['appDataService',
+              function(appDataService) {
+                return appDataService.getAppData();
+              }
+            ]
+          }
         });
       // if none of the above states are matched, use this as the fallback
       $urlRouterProvider.otherwise('/app/start');

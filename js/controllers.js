@@ -6,12 +6,12 @@
     .controller('BasicGalleryCtrl', BasicGalleryCtrl)
     .controller('StartPageCtrl', StartPageCtrl);
 
-  AppCtrl.$inject = ['$rootScope', 'appDataService'];
+  AppCtrl.$inject = ['$rootScope', 'appData'];
 
-  function AppCtrl($rootScope, appDataService) {
+  function AppCtrl($rootScope, appData) {
     var vm = this;
     //play the song from start
-    vm.musicPlaying = true;
+    vm.musicPlaying = appData.music.autoplay || true;
     vm.toggleMusic = function() {
       if ($scope.musicPlaying) {
         $rootScope.$broadcast('musicStop');
@@ -23,36 +23,28 @@
     };
 
     //add dynamic data to menu
-    vm.music = {};
-    appDataService.getAppData().then(function(data) {
-      vm.galleries = data.galleries;
-      vm.music = data.music;
-    });
+    vm.galleries = appData.galleries;
+    vm.music = appData.music;
+    vm.menu = appData.menu;
   }
 
-  BasicGalleryCtrl.$inject = ["$scope", "$state", "appDataService"];
+  BasicGalleryCtrl.$inject = ["$scope", "$state", "appData"];
 
-  function BasicGalleryCtrl($scope, $state, appDataService) {
-    $scope.gallery = {};
-    $scope.text = "";
-    appDataService.getAppData().then(function(data) {
-      $scope.gallery = _.find(data.galleries, function(gallery) {
-        return gallery.name == $state.$current.name;
-      });
-      $scope.text = [$scope.gallery.images[0].text];
+  function BasicGalleryCtrl($scope, $state, appData) {
+    $scope.gallery = _.find(appData.galleries, function(gallery) {
+      return gallery.name == $state.$current.name;
     });
+    $scope.text = [$scope.gallery.images[0].text];
 
     $scope.slideHasChanged = function(param) {
       $scope.text = [$scope.gallery.images[param].text];
     };
   }
 
-  StartPageCtrl.$inject = ["$scope", "appDataService"];
+  StartPageCtrl.$inject = ["$scope", "appData"];
 
-  function StartPageCtrl($scope, appDataService) {
-    appDataService.getAppData().then(function(data) {
-      $scope.startPage = data.startPage;
-    });
+  function StartPageCtrl($scope, appData) {
+    $scope.startPage = appData.startPage;
   }
 
 
