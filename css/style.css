@@ -9,8 +9,8 @@
 }
 
 .bg-img.underlay {
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
+    -webkit-filter: blur(9px);
+    filter: blur(9px);
     background-size: cover;
     position: absolute;
     top: 0;
