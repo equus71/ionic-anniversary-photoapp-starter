@@ -22,8 +22,8 @@
         </ion-item>
         <ion-item nav-clear menu-close ui-sref="{{ gallery.name }}" class="item item-avatar" ng-repeat="gallery in vm.galleries">
           <img ng-src="{{ gallery.avatar }}">
-          <h2>{{ gallery.title }}</h2>
-          <p>{{ gallery.subtitle }}</p>
+          <h2 ng-bind-html="gallery.title"></h2>
+          <p ng-bind-html="gallery.subtitle"></p>
         </ion-item>
         <ion-item nav-clear class="item item-toggle item-icon-left" ng-if="vm.music.enabled">
           <i class="icon ion-music-note"></i>
