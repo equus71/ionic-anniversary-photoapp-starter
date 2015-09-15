@@ -27,7 +27,7 @@
           .then(function(data) {
             angular.forEach(data.galleries, function(value, key) {
               var state = {
-                url: value.url,
+                url: value.url || "/" + value.name,
                 parent: "app",
                 abstract: value.abstract || false,
                 views: {
