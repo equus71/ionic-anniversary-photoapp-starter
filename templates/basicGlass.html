@@ -3,9 +3,9 @@
      <ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true" auto-play="false"
                        show-pager="false" class="sliderBox">
            <ion-slide ng-repeat="img in gallery.images">
-                <div class="bg-img" style="background-image:url({{img.url}})">
+                <div class="bg-img" style="background-image:url({{img.path}})">
                 </div>
-                <div class="bg-img underlay" style="background-image:url({{img.url}})">
+                <div class="bg-img underlay" style="background-image:url({{img.path}})">
                 </div>
             </ion-slide>
         </ion-slide-box>
