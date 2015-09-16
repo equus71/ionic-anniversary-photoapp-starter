@@ -1,34 +1,86 @@
 {
   "startPage":{
     "title": "Our anniversary",
-    "image": "img/front.jpg",
-    "text": "dla Żony:*",
+    "image": "data/front.jpg",
+    "text": "For my beloved wife on the anniversary of the most beautiful day of our lives: *",
     "template": "templates/startPageGlass.html",
     "controller": "StartPageCtrl"
+  },
+  "menu": {
+    "title": "&#9829; our history &#9829;",
+    "startPageTitle": "2. anniversary"
   },
   "music": {
     "enabled": true,
     "text": "our song",
-    "path": "/android_asset/www/img/itisyou.mp3"
+    "path": "/android_asset/www/data/your_song.mp3"
   },
   "galleries": [
     {
-      "name": "rome",
-      "url": "/rome",
-      "title": "Rzym 2014",
+      "title": "Beginnings",
+      "subtitle": "Love & ballons",
+      "name": "beginnings",
       "template": "templates/basic.html",
-      "avatar": "img/r/1.jpg",
+      "avatar": "data/beginnings/4.jpg",
       "images": [
         {
-          "url": "img/r/1.jpg",
+          "path": "data/beginnings/1.jpg",
           "text": "test"
         },
         {
-          "url": "img/r/2.jpg",
+          "path": "data/beginnings/2.jpg",
           "text": "test2"
         },
         {
-          "url": "img/r/3.jpg",
+          "path": "data/beginnings/3.jpg",
+          "text": "test3"
+        },
+        {
+          "path": "data/beginnings/4.jpg",
+          "text": "test4"
+        }
+      ]
+    },
+    {
+      "title": "Wedding",
+      "subtitle": "&#9829; 6.04.2013 &#9829;",
+      "name": "wedding",
+      "url": "/wed",
+      "template": "templates/basicGlass.html",
+      "avatar": "data/wedding/1.jpg",
+      "images": [
+        {
+          "path": "data/wedding/1.jpg",
+          "text": "test"
+        },
+        {
+          "path": "data/wedding/2.jpg",
+          "text": "test2"
+        },
+        {
+          "path": "data/wedding/3.jpg",
+          "text": "test3"
+        }
+      ]
+    },
+    {
+      "title": "Honeymoon",
+      "subtitle": "The sweetest days",
+      "name": "honeymoon",
+      "url": "/honeymoon",
+      "template": "templates/basicGlass.html",
+      "avatar": "data/honeymoon/2.jpg",
+      "images": [
+        {
+          "path": "data/honeymoon/1.jpg",
+          "text": "test"
+        },
+        {
+          "path": "data/honeymoon/2.jpg",
+          "text": "test2"
+        },
+        {
+          "path": "data/honeymoon/3.jpg",
           "text": "test3"
         }
       ]
