@@ -2,7 +2,7 @@
   "startPage":{
     "title": "Our anniversary",
     "image": "data/front.jpg",
-    "text": "For my beloved wife on the anniversary of the most beautiful day of our lives: *",
+    "text": "For my beloved wife on the anniversary of the most beautiful day of our lives :*",
     "template": "templates/startPageGlass.html",
     "controller": "StartPageCtrl"
   },
@@ -25,19 +25,19 @@
       "images": [
         {
           "path": "data/beginnings/1.jpg",
-          "text": "test"
+          "text": "Everything started from ballons..."
         },
         {
           "path": "data/beginnings/2.jpg",
-          "text": "test2"
+          "text": "...some small signs..."
         },
         {
           "path": "data/beginnings/3.jpg",
-          "text": "test3"
+          "text": "...and the bigger signs..."
         },
         {
           "path": "data/beginnings/4.jpg",
-          "text": "test4"
+          "text": "...and the love light up our lives."
         }
       ]
     },
@@ -51,15 +51,15 @@
       "images": [
         {
           "path": "data/wedding/1.jpg",
-          "text": "test"
+          "text": "We arrived in the sneakers..."
         },
         {
           "path": "data/wedding/2.jpg",
-          "text": "test2"
+          "text": "...and we said Yes!!!"
         },
         {
           "path": "data/wedding/3.jpg",
-          "text": "test3"
+          "text": "<3"
         }
       ]
     },
@@ -73,15 +73,15 @@
       "images": [
         {
           "path": "data/honeymoon/1.jpg",
-          "text": "test"
+          "text": "We started on our journey..."
         },
         {
           "path": "data/honeymoon/2.jpg",
-          "text": "test2"
+          "text": "...romantic journey..."
         },
         {
           "path": "data/honeymoon/3.jpg",
-          "text": "test3"
+          "text": "...very romantic journey :)"
         }
       ]
     }
