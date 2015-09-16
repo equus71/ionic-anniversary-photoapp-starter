@@ -1,27 +1,26 @@
 ## Synopsis
 
-This is an ionic starter. It goal is to help you to build with minimum of coding a photobook application (e.g. for anniversary). This starter should let you focus on the important part - selecting right pictures and making captions for them.
+This is an ionic starter. Its goal is to help you to build with a minimum of coding a photobook application (e.g. for anniversary). This starter should let you focus on the important part - selecting right pictures and making captions for them.
 
 ## Motivation
 
-I wanted to do for my wife an application for the anniversary of our wedding - simple app with our photos from most important moments for us + our song playing in the background.
+I wanted to do for my wife an application for the anniversary of our wedding - simple app with our photos of the most important moments for us + our song playing in the background.
 Recently, I have got an idea it would be cool to clean it up and release it as an ionic starter.
 
 ## Demo
 
 You can check out live demo at:
 
-TODO demo heroku
+[https://calm-ravine-4677.herokuapp.com/](https://calm-ravine-4677.herokuapp.com/)
 
 NOTE: music playback works only on native devices.
-
 
 ## Installation
 
 Starter usage:
 
 ```
-ionic start [your_app_name] TODO_link_to_starter
+ionic start [your_app_name] https://github.com/equus71/ionic-anniversary-photoapp-starter
 ```
 
 Install bower dependencies:
@@ -44,7 +43,7 @@ To build an app follow the standard procedure for [ionic](http://ionicframework.
 In the `data/appData.json` you can define most of the app.
 But this is only the plan. You may overwrite anything in the app as well.
 
-Example is shipped with the starter, see: [www/data/appData.json](http://TODO:link to the repo).
+Example is shipped with the starter, see: [www/data/appData.json](https://github.com/equus71/ionic-anniversary-photoapp-starter/blob/master/data/appData.json).
 Sorry it is cliche, but I did not want to share my private version, so I had to fill the example with some generic content.
 
 The structure is following:
