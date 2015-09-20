@@ -13,7 +13,7 @@
     //play the song from start
     vm.musicPlaying = appData.music.autoplay || true;
     vm.toggleMusic = function() {
-      if ($scope.musicPlaying) {
+      if (vm.musicPlaying) {
         $rootScope.$broadcast('musicStop');
         vm.musicPlaying = false;
       } else {

@@ -27,8 +27,8 @@
         </ion-item>
         <ion-item nav-clear class="item item-toggle item-icon-left" ng-if="vm.music.enabled">
           <i class="icon ion-music-note"></i>
-          <em>{{vm.music.text}}</em>
-          <label class="toggle toggle-calm" ng-click="toggleMusic()">
+          <em ng-bind-html="vm.music.text"></em>
+          <label class="toggle toggle-calm" ng-click="vm.toggleMusic()">
            <input type="checkbox" ng-checked="vm.musicPlaying">
            <div class="track">
              <div class="handle"></div>
