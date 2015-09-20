@@ -59,9 +59,10 @@ The structure is following:
     * `path` - path to an image
     * `text` - text to be displayed with the image
 * `music` - define background music (if any)
-  * `enabled` - boolean
+  * `enabled` - disable/enable music
   * `text` - text in side menu next to the pause/play switch
   * `path` - path to the file with the music; take into account device limitation; I had to use path starting with '/android_asset/[..]' on Android
+  * `autoplay` - start music with the app start
 * `startPage` - start page picture and text
   * `title` - title on the start page
   * `image` - image for the start page

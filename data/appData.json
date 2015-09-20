@@ -13,7 +13,8 @@
   "music": {
     "enabled": true,
     "text": "our song",
-    "path": "/android_asset/www/data/your_song.mp3"
+    "path": "/android_asset/www/data/your_song.mp3",
+    "autoplay": true
   },
   "galleries": [
     {
